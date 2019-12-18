@@ -29,10 +29,10 @@ KeyWordList = [
                "expression",
                ]
 OpList = ["bracket","plus","minus","multiply","devide","attribute",
-          "larger","smaller","index","and","or","not","is","return"]
+          "bigger","smaller","index","and","or","not","is","return"]
 
 OpDict = {"plus":"+","minus":"-","multiply":"*","devide":"/",
-          "attribute":".","return":"return ","larger":">","smaller":"<"}
+          "attribute":".","return":"return ","bigger":">","smaller":"<"}
 
 CmdList = ["quit","next","no"]
 

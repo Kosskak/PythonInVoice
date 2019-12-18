@@ -61,6 +61,9 @@ def PIVmain(time):
                 if not same_text:
                     N_indent += 1
             if head.name=="function":
+                def_code = getFunc(WordList)
+                if not def_code:
+                    continue
                 code_list.append(getFunc(WordList))
                 if not same_text:
                     N_indent += 1
@@ -76,6 +79,8 @@ def PIVmain(time):
             if head.name=="break" or head.name=="continue" or head.name=="pass":
                 code_list.append(head.name)
                 N_indent -= 1
+            if head.name == "none":
+                code_list.append("None")
                 
             code_list[-1] += ("\n"+"\t"*N_indent)
         last_text = origin_text
